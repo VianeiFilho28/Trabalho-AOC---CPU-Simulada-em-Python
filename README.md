@@ -30,27 +30,3 @@ Para executar os testes:
 ```bash
 python testes.py
 ```
-
-### Exemplo:
-
-O main.py contém:
-
-```text
-0: LOAD R0, 5
-1: JMP 4
-2: LOAD R0, 99
-3: HALT
-4: LOAD R1, 8
-5: HALT
-```
-
-A instrução `JMP 4` faz a CPU saltar da posição 1 para a posição 4.
-
-Portanto:
-
-```text
-R0 = 5
-R1 = 8
-```
-
-A instrução `LOAD R0, 99` não será executada.
