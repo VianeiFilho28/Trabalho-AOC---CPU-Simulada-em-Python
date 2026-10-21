@@ -1,53 +1,23 @@
 # CPU Simulada — Código-base
 ## AOC 2026.2
+## Alunos: Gabriel Farias Magalhães- 581758 e José Vianei Castro e Silva Filho - 580381
 
-### 1. Objetivo
+### Descrição do Trabalho:
 
-Este pacote contém o código-base para o projeto de CPU Simulada.
+Implementação de uma pequena CPU simulada em Python.
 
-A CPU possui:
+A proposta é integrar, em um único projeto, conceitos de ULA, registradores, memória, instruções e ciclo de execução de uma CPU. 
+A CPU tem: dados de 8 bits, quatro registradores, uma
+memória de 16 posições e um conjunto reduzido de instruções.
 
-- dados de 8 bits;
-- quatro registradores: R0, R1, R2 e R3;
-- memória com 16 posições;
-- PC (Program Counter);
-- ULA;
-- ciclo Fetch → Decode → Execute.
+### Arquivos:
 
-### 2. Arquivos
+- ula.py — ULA e operações aritméticas/lógicas.
+- cpu.py — estrutura principal da CPU.
+- main.py — programa de demonstração.
+- testes.py — testes das partes já implementadas.
 
-- `ula.py` — ULA e operações aritméticas/lógicas.
-- `cpu.py` — estrutura principal da CPU.
-- `main.py` — programa de demonstração.
-- `testes.py` — testes das partes já implementadas.
-
-### 3. O que já está implementado
-
-No código-base, estão implementados:
-
-- registradores;
-- memória;
-- PC;
-- limitação para 8 bits;
-- `LOAD`;
-- `JMP`;
-- `HALT`;
-- estrutura do ciclo Fetch → Decode → Execute.
-
-### 4. O que deve ser implementado pela dupla
-
-Os alunos deverão completar:
-
-- `STORE`;
-- `ADD`;
-- `SUB`;
-- `AND`;
-- `OR`;
-- `XOR`;
-- operações da ULA em `ula.py`;
-- testes adicionais.
-
-### 5. Como executar
+### Como executar:
 
 No terminal, dentro da pasta:
 
@@ -61,9 +31,9 @@ Para executar os testes:
 python testes.py
 ```
 
-### 6. Exemplo
+### Exemplo:
 
-O `main.py` contém:
+O main.py contém:
 
 ```text
 0: LOAD R0, 5
@@ -84,15 +54,3 @@ R1 = 8
 ```
 
 A instrução `LOAD R0, 99` não será executada.
-
-### 7. Regras
-
-Não alterar:
-
-- os nomes dos arquivos;
-- a assinatura da função `ula()`;
-- a estrutura dos registradores;
-- o tamanho da memória;
-- a representação de 8 bits.
-
-O grupo pode acrescentar funções auxiliares e melhorar a visualização, desde que preserve a interface definida pelo professor.
